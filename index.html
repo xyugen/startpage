@@ -5,7 +5,7 @@
         </head>
         <link rel="stylesheet" href="styles.css">
     </html>
-    <body>
+    <body class="theme-dark">
         <div class="container">
             <header>
                 <h1>~/startpage</h1>
@@ -15,6 +15,12 @@
             <main class="content">
             </main>
             <input type="text" class="search" onkeyup="handleChange()" onkeypress="if(event.keyCode === 13) handleSearch()" autofocus required/>
+            <footer>
+                <div class="color-themes">
+                    <button onclick="setTheme('dark')">dark</button>
+                    <button onclick="setTheme('light')">light</button>
+                </div>
+            </footer>
         </div>
 
         <script src="script.js"></script>

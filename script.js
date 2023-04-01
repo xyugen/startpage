@@ -100,3 +100,18 @@ const handleSearch = () => {
     else
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(search.value.trim())}`;
 };
+
+// COLOR THEME CHANGE
+const setTheme = (themeName) => {
+    document.body.className = 'theme-' + themeName;
+    localStorage.setItem('theme', themeName);
+};
+
+// check previously set theme in localStorage
+(() => {
+    if (localStorage.getItem('theme') == 'dark') {
+        setTheme('dark');
+    } else {
+        setTheme('light');
+    }
+})();

@@ -1,24 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
 
 :root {
+    --font-primary: "Fira Code", monospace;
+    --font-secondary: "Poppins", sans-serif;
+
+    --transition: all .25s;
+}
+
+.theme-dark {
     --color-bg: #22223b;
     --color-bg-variant: #4a4e69;
     --color-fg: #f2e9e4;
     --color-primary: #c9ada7;
     --color-secondary: #9a8c98;
+}
 
-    /*
+.theme-light {
     --color-bg: #f2e9e4;
     --color-bg-variant: #c9ada7;
     --color-fg: #22223b;
     --color-primary: #4a4e69;
-    --color-secondary: #9a8c98;
-     */
-
-    --font-primary: "Fira Code", monospace;
-    --font-secondary: "Poppins", sans-serif;
-
-    --transition: all .25s;
+    --color-secondary: #9a8c98; 
 }
 
 *, *::before, *::after {
