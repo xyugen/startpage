@@ -1,7 +1,7 @@
 const sites = [
     {'a': 'AWS', 'url': 'https://aws.amazon.com/'},
     {'b': 'Facebook', 'url': 'https://www.facebook.com/'},
-    {'c': 'ChatGPT', 'url': 'https://www.chat.openai.com/'},
+    {'c': 'ChatGPT', 'url': 'https://chat.openai.com/'},
     {'d': 'Dribbble', 'url': 'https://dribbble.com/'},
     {'f': 'Figma', 'url': 'https://www.figma.com/'},
     {'g': 'Github', 'url': 'https://github.com/'},
