@@ -4,7 +4,7 @@ This is a simple start page built with purely vanilla HTML, CSS, and JavaScript.
 
 ## Usage
 
-To use the start page, simply clone or download the repository and open the `index.html` file in your web browser.
+To use the start page, simply clone or download the repository and open the `index.html` file in your web browser or set `https://xyugen.github.io/startpage` as your default homepage.
 
 ## License
 
