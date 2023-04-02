@@ -74,7 +74,7 @@ const checkValue = (value) => {
             return;
         }
     });
-};feat: Add title attributes to color theme buttons and update cursor style
+};
 
 // checks search value to match opacity
 const opacityToggle = (element) => {
