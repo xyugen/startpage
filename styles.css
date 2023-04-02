@@ -23,6 +23,14 @@
     --color-secondary: #9a8c98; 
 }
 
+.theme-gruvbox {
+    --color-bg: #282828;
+    --color-bg-variant: #928374;
+    --color-fg: #EBDBB2;
+    --color-primary: #A89984;
+    --color-secondary: #D65D0E;  
+}
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -104,6 +112,41 @@ header {
 .search:valid {
     opacity: 1;
     transform: translateY(12rem);
+}
+
+/* THEME CHANGER BUTTONS */
+.color-themes {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.color-themes > * {
+    width: 1rem;
+    height: 1rem;
+
+    border: none;
+    outline: none;
+    border-radius: 5px; 
+}
+
+#btn-theme-dark {
+    background-color: #22223b;
+    border: 1px solid #f2e9e4;
+}
+
+#btn-theme-light {
+    background-color: #f2e9e4;
+    border: 1px solid #22223b;
+}
+
+#btn-theme-gruvbox {
+    background-color: #282828;
+    border: 1px solid #D65D0E;
+}
+
+.active {
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

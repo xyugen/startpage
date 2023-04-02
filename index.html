@@ -4,7 +4,7 @@
         <title>~/startpage</title>
         </head>
         <link rel="stylesheet" href="styles.css">
-    </html>
+    </head>
     <body class="theme-dark">
         <div class="container">
             <header>
@@ -17,8 +17,9 @@
             <input type="text" class="search" onkeyup="handleChange()" onkeypress="if(event.keyCode === 13) handleSearch()" autofocus required/>
             <footer>
                 <div class="color-themes">
-                    <button onclick="setTheme('dark')">dark</button>
-                    <button onclick="setTheme('light')">light</button>
+                    <button onclick="setTheme('dark')" id="btn-theme-dark"></button>
+                    <button onclick="setTheme('light')" id="btn-theme-light"></button>
+                    <button onclick="setTheme('gruvbox')" id="btn-theme-gruvbox"></button>
                 </div>
             </footer>
         </div>

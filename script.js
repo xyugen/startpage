@@ -76,6 +76,7 @@ const checkValue = (value) => {
     });
 };
 
+// checks search value to match opacity
 const opacityToggle = (element) => {
     console.log(`BAR: ${search.value}`);
     if (search && search.value)
@@ -86,6 +87,7 @@ const opacityToggle = (element) => {
 
 const div = document.querySelectorAll('.site div');
 
+// input element watcher
 const handleChange = () => {
     div.forEach(element => {
         opacityToggle(element);
@@ -102,16 +104,22 @@ const handleSearch = () => {
 };
 
 // COLOR THEME CHANGE
+const colorThemes = ['dark', 'light', 'gruvbox'];
+
 const setTheme = (themeName) => {
     document.body.className = 'theme-' + themeName;
+    colorThemes.forEach((item, index) => {
+        if (item === themeName)
+            document.querySelector(`#btn-theme-${themeName}`).classList.add('active');
+        else
+            document.querySelector(`#btn-theme-${item}`).classList.remove('active');
+
+        console.log("INDEX: " + index);
+    });
     localStorage.setItem('theme', themeName);
 };
 
 // check previously set theme in localStorage
 (() => {
-    if (localStorage.getItem('theme') == 'dark') {
-        setTheme('dark');
-    } else {
-        setTheme('light');
-    }
+    setTheme(localStorage.getItem('theme'));
 })();
