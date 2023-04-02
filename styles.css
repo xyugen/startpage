@@ -127,7 +127,8 @@ header {
 
     border: none;
     outline: none;
-    border-radius: 5px; 
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #btn-theme-dark {
