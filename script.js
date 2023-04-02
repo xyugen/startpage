@@ -1,9 +1,8 @@
 const sites = [
-    {'a': 'AWS', 'url': 'https://aws.amazon.com/'},
-    {'b': 'Facebook', 'url': 'https://www.facebook.com/'},
+    {'a': 'Anilist', 'url': 'https://anilist.co/'},
     {'c': 'ChatGPT', 'url': 'https://chat.openai.com/'},
     {'d': 'Dribbble', 'url': 'https://dribbble.com/'},
-    {'f': 'Figma', 'url': 'https://www.figma.com/'},
+    {'f': 'Facebook', 'url': 'https://www.facebook.com/'},
     {'g': 'Github', 'url': 'https://github.com/'},
     {'i': 'Instagram', 'url': 'https://www.instagram.com/'},
     {'k': 'Keep', 'url': 'https://keep.google.com/'},
@@ -12,6 +11,7 @@ const sites = [
     {'r': 'Reddit', 'url': 'https://www.reddit.com/'},
     {'s': 'Shopee', 'url': 'https://shopee.com/'},
     {'t': 'Twitter', 'url': 'https://twitter.com/'},
+    {'u': 'r/unixporn', 'url': 'https://www.reddit.com/r/unixporn/'},
     {'y': 'YouTube', 'url': 'https://www.youtube.com/'},
     {'0': 'localhost', 'url': 'http://localhost:3000/'},
 ];
@@ -74,7 +74,7 @@ const checkValue = (value) => {
             return;
         }
     });
-};
+};feat: Add title attributes to color theme buttons and update cursor style
 
 // checks search value to match opacity
 const opacityToggle = (element) => {
